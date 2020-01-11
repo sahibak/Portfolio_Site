@@ -10,7 +10,7 @@ export default class Projects extends React.Component{
     allProjects = [
         {
             "name": "My Portfolio",
-            "description": "Setting up my portoflio website to showcase my work.",
+            "description": "Developement of my portoflio website to share my develpoment journey.",
             "image": {Portfolio},
             "link": "https://github.com/sahibak/Portfolio"
         },

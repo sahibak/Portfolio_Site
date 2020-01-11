@@ -3,7 +3,7 @@
 
 .project {
     list-style: none;
-    // background-color: #CACCC3;
+    background-color: rgb(235,235,235);
     padding: 20px 20px 0 20px;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -14,7 +14,6 @@
 
     @include tablet-view {
         margin-bottom: auto;
-        // background-color: #DFE0DC;
         background-color: rgb(235,235,235);
         flex-direction: row;
         margin-bottom: 100px;
@@ -33,7 +32,7 @@
         }
     }
 
-    &-details-title{
+    &-title{
         width: 250px;
         bottom: 60px;
         font-weight: bold;
@@ -44,9 +43,9 @@
         }
     }
 
-    &-details-description{
+    &-description{
         width: 250px;
-        height: auto;
+        height: 100px;
         padding-top: 20px;
 
         @include tablet-view{
