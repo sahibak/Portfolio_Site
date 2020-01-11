@@ -3,7 +3,7 @@
 
 .project {
     list-style: none;
-    // background-color: #CACCC3;
+    background-color: rgb(235,235,235);
     padding: 20px 20px 0 20px;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -14,7 +14,6 @@
 
     @include tablet-view {
         margin-bottom: auto;
-        // background-color: #DFE0DC;
         background-color: rgb(235,235,235);
         flex-direction: row;
         margin-bottom: 100px;
@@ -33,7 +32,7 @@
         }
     }
 
-    &-details-title{
+    &-title{
         width: 250px;
         bottom: 60px;
         font-weight: bold;
@@ -44,9 +43,9 @@
         }
     }
 
-    &-details-description{
+    &-description{
         width: 250px;
-        height: auto;
+        height: 100px;
         padding-top: 20px;
 
         @include tablet-view{
@@ -58,7 +57,6 @@
         margin-top: 20px;
         margin-bottom: 10px;
         border-radius: 5px;
-        color: gray;
         padding: 5px 5px;
         font-size: 1em;
         box-sizing: border-box;
@@ -68,9 +66,6 @@
         margin-right: auto;
         margin-left: auto;
         width: 140px;
-        display:flex;
-        // align-items: center;
-        // z-index: 1;
 
         @include tablet-view{
             display:none;
@@ -78,6 +73,12 @@
             text-align: left;
             width: 9em;
         }
+    }
+
+    &-details-link{
+        text-decoration: none;
+        color: gray;
+        display: flex;
     }
 
     &-details-image{
