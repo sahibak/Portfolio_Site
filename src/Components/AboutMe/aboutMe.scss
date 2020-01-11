@@ -1,0 +1,79 @@
+// importing base mixins
+@import "../_baseMixins.scss";
+
+.self{
+    // background-color: #FBFFF1;
+    // background-color:rgb(214,216,203);
+    background-color: rgb(219, 219, 216);
+    padding: 50px 50px 20px 50px;
+    min-height: 100vh;
+    max-height: 2000px;
+    box-sizing: border-box;
+    @include tablet-view{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    @include laptop-view{
+        background-attachment: fixed;
+    }
+
+    &-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include tablet-view{
+            border-right: 1px solid;
+            padding-right: 80px;
+            height: 80vh;
+            justify-content: center;
+        }
+    }
+
+    &-aboutme{
+        font-size: 1.5em;
+        margin-top:0px;
+        margin-bottom: 50px;
+        @include tablet-view{
+            font-size: 2.5em;
+        }
+        @include laptop-view{
+            font-size: 3em;
+        }
+    }
+
+    &-image{
+        background-image: url("../../Assets/photo.jpg");
+        background-size: cover;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        border-right: 1px black solid;
+    }
+
+    &-links{
+        padding: 0px;
+    }
+
+    &-description{
+        height: auto;
+        @include tablet-view{
+            font-size: 1.25em;
+            padding-left: 50px;
+            overflow: scroll;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @include laptop-view{
+            font-size: 1.25em;
+            height: auto;
+            padding-left: 50px;
+        }
+    }
+}

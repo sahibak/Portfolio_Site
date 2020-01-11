@@ -1,0 +1,111 @@
+// importing base mixins
+@import "../_baseMixins.scss";
+
+.project {
+    list-style: none;
+    // background-color: #CACCC3;
+    padding: 20px 20px 0 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    @include tablet-view {
+        margin-bottom: auto;
+        // background-color: #DFE0DC;
+        background-color: rgb(235,235,235);
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+
+    &-details{
+        list-style: none;
+        padding: 0px;
+        
+
+        @include tablet-view{
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            font-size: 1em;
+        }
+    }
+
+    &-details-title{
+        width: 250px;
+        bottom: 60px;
+        font-weight: bold;
+        padding-top: 20px;
+
+        @include tablet-view{
+            text-align: left;
+        }
+    }
+
+    &-details-description{
+        width: 250px;
+        height: auto;
+        padding-top: 20px;
+
+        @include tablet-view{
+            text-align: left;
+        }
+    }
+
+    &-details-access{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        color: gray;
+        padding: 5px 5px;
+        font-size: 1em;
+        box-sizing: border-box;
+        // background-color:#EFF7FF;
+        background-color: rgb(241, 241, 241);
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 140px;
+        display:flex;
+        // align-items: center;
+        // z-index: 1;
+
+        @include tablet-view{
+            display:none;
+            margin-left: 0px;
+            text-align: left;
+            width: 9em;
+        }
+    }
+
+    &-details-image{
+        margin-left: 10px;
+    }
+
+    &-image{
+        height: 200px;
+        width: 200px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    &-image-display{
+        height: inherit;
+        width: inherit;
+        border: none;
+        border-radius: inherit;
+    }
+
+
+
+}
+
+.project:hover .project-details-access{
+    @include tablet-view{
+        display:flex;
+        align-items: center;
+        z-index: 1;
+    }
+}
