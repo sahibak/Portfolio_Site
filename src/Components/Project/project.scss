@@ -58,7 +58,6 @@
         margin-top: 20px;
         margin-bottom: 10px;
         border-radius: 5px;
-        color: gray;
         padding: 5px 5px;
         font-size: 1em;
         box-sizing: border-box;
@@ -68,9 +67,6 @@
         margin-right: auto;
         margin-left: auto;
         width: 140px;
-        display:flex;
-        // align-items: center;
-        // z-index: 1;
 
         @include tablet-view{
             display:none;
@@ -78,6 +74,12 @@
             text-align: left;
             width: 9em;
         }
+    }
+
+    &-details-link{
+        text-decoration: none;
+        color: gray;
+        display: flex;
     }
 
     &-details-image{
