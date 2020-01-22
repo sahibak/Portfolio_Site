@@ -67,17 +67,17 @@
         list-style: none;
         padding-left: 0px;
         @include tablet-view{
-            font-size: 1.25em;
+            font-size: 1rem;
             padding-left: 50px;
             overflow: scroll;
-            height: 80vh;
+            height: auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
         @include laptop-view{
-            font-size: 1.25em;
+            font-size: 1rem;
             height: auto;
             padding-left: 50px;
         }
