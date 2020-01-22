@@ -12,7 +12,7 @@ export default class Projects extends React.Component{
             "name": "My Portfolio",
             "description": "Developement of my portoflio website to share my develpoment journey.",
             "image": {Portfolio},
-            "link": "https://github.com/sahibak/Portfolio"
+            "link": "https://github.com/sahibak/Portfolio_Site"
         },
         {
             "name": "Grosure",
