@@ -1,48 +1,48 @@
 // importing base mixins
 @import "../_baseMixins.scss";
 
-.footer{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    background-color: grey;
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: grey;
+  color: whitesmoke;
+  height: auto;
+  list-style: none;
+  margin: 0px;
+  padding: 20px 50px 20px 50px;
+
+  @include laptop-view {
+    // height: 25vh;
+  }
+
+  &-title {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  &-item {
+    // padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 1em;
+  }
+
+  &-link {
+    text-decoration: none;
+    // text-decoration: underline;
     color: whitesmoke;
-    height: auto;
+  }
+
+  &-contact {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-credit-list {
     list-style: none;
-    margin: 0px;
-    padding: 20px 50px 20px 50px;
-
-    @include laptop-view{
-        // height: 25vh;
-    }
-
-    &-title{   
-        padding-bottom: 20px;
-        font-weight: bold;
-        font-size: 1.5em;
-    }
-
-    &-item{
-        // padding-left: 20px;
-        padding-bottom: 10px;
-        font-size: 1em;
-    }
-
-    &-link{
-        text-decoration: none;
-        text-decoration: underline;
-        color: whitesmoke;
-    }
-
-    &-contact{
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    &-credit-list{
-        list-style: none;
-        text-align: left;
-    }
+    text-align: left;
+  }
 }
