@@ -26,7 +26,7 @@ export default class Projects extends React.Component {
     {
       name: "Grosure",
       description:
-        "BrainStation Graduation Capstone - A web application to help with recipe selection and preparing a grocery list based on requirements.",
+        "BrainStation Graduation Capstone - A mobile web application to help with recipe selection and preparing a grocery list based on requirements.",
       image: { Grosure },
       link: "https://github.com/sahibak/Capstone"
     },

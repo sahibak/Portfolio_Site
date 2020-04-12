@@ -41,7 +41,16 @@ export default class Footer extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Clint Adair.
+            Clint Adair
+          </a>{" "}
+          via{" "}
+          <a
+            className="footer-link"
+            href="https://unsplash.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Unsplash.
           </a>
         </li>
       </ul>
