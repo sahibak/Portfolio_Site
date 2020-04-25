@@ -10,9 +10,8 @@ export default class Projects extends React.Component {
   // array of the projects I have worked on.
   allProjects = [
     {
-      name: "Data Structures",
-      description:
-        "Learning data structures to solve everyday problems in computing.",
+      name: "Data Structures & Algorithms",
+      description: "",
       image: { DataStructures },
       link: "https://github.com/sahibak/algorithms"
     },

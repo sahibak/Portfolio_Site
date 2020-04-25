@@ -1,44 +1,39 @@
 // importing base mixins
 @import "../_baseMixins.scss";
 
-.projects{
-    
-    padding: 50px 50px 50px 50px;
-    // background-image: url("../../Assets/hero.jpg");
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: 0% 50%;
-    min-height: 100vh;
-    max-height: 2000px;
-    
-    @include tablet-view{
-        background-image: url("../../Assets/projects.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0% 50%;
-    }
+.projects {
+  padding: 50px 50px 50px 50px;
+  min-height: 100vh;
+  max-height: 2000px;
 
-    @include laptop-view{
-        // height: 100vh;
-        background-attachment: fixed;
-    }
+  @include tablet-view {
+    background-image: url("../../Assets/projects.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 60%;
+  }
 
-    &-title{
-        font-size: 1.5em;
-        text-align: center;
-        margin: 0px;
-        margin-bottom: 20px;
+  @include laptop-view {
+    // height: 100vh;
+    background-attachment: fixed;
+  }
 
-        @include tablet-view{
-            text-align: left;
-            font-size: 3em; 
-        }
-    }
+  &-title {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
 
-    &-list{
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    @include tablet-view {
+      text-align: left;
+      font-size: 3em;
     }
+  }
+
+  &-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
