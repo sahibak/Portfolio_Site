@@ -2,112 +2,114 @@
 @import "../_baseMixins.scss";
 
 .project {
+  list-style: none;
+  background-color: rgb(235, 235, 235);
+  padding: 20px 20px 0 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+
+  @include tablet-view {
+    margin-bottom: auto;
+    background-color: rgb(235, 235, 235);
+    flex-direction: row;
+    margin-bottom: 100px;
+  }
+  @include laptop-view {
+    filter: grayscale(1);
+  }
+
+  &-details {
     list-style: none;
-    background-color: rgb(235,235,235);
-    padding: 20px 20px 0 20px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
+    padding: 0px;
 
     @include tablet-view {
-        margin-bottom: auto;
-        background-color: rgb(235,235,235);
-        flex-direction: row;
-        margin-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+      font-size: 1em;
     }
+  }
 
-    &-details{
-        list-style: none;
-        padding: 0px;
-        
+  &-title {
+    width: 250px;
+    bottom: 60px;
+    font-weight: bold;
+    padding-top: 20px;
 
-        @include tablet-view{
-            display: flex;
-            flex-direction: column;
-            margin-right: 20px;
-            font-size: 1em;
-        }
+    @include tablet-view {
+      text-align: left;
     }
+  }
 
-    &-title{
-        width: 250px;
-        bottom: 60px;
-        font-weight: bold;
-        padding-top: 20px;
+  &-description {
+    width: 250px;
+    height: 100px;
+    padding-top: 20px;
 
-        @include tablet-view{
-            text-align: left;
-        }
+    @include tablet-view {
+      text-align: left;
     }
+  }
 
-    &-description{
-        width: 250px;
-        height: 100px;
-        padding-top: 20px;
+  &-details-access {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    // background-color:#EFF7FF;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 140px;
 
-        @include tablet-view{
-            text-align: left;
-        }
+    @include tablet-view {
+      //   display: none;
+      margin-left: 0px;
+      text-align: left;
+      width: 9em;
     }
+  }
 
-    &-details-access{
-        margin-top: 20px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        padding: 5px 5px;
-        font-size: 1em;
-        box-sizing: border-box;
-        // background-color:#EFF7FF;
-        background-color: rgb(241, 241, 241);
-        text-align: center;
-        margin-right: auto;
-        margin-left: auto;
-        width: 140px;
+  &-details-link {
+    text-decoration: none;
+    color: #3a3a3a;
+    display: flex;
+  }
 
-        @include tablet-view{
-            display:none;
-            margin-left: 0px;
-            text-align: left;
-            width: 9em;
-        }
-    }
+  &-details-image {
+    margin-left: 10px;
+  }
 
-    &-details-link{
-        text-decoration: none;
-        color: gray;
-        display: flex;
-    }
+  &-image {
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    overflow: hidden;
+  }
 
-    &-details-image{
-        margin-left: 10px;
-    }
-
-    &-image{
-        height: 200px;
-        width: 200px;
-        border: none;
-        border-radius: 4px;
-        overflow: hidden;
-    }
-
-    &-image-display{
-        height: inherit;
-        width: inherit;
-        border: none;
-        border-radius: inherit;
-    }
-
-
-
+  &-image-display {
+    height: inherit;
+    width: inherit;
+    border: none;
+    border-radius: inherit;
+  }
 }
 
-.project:hover .project-details-access{
-    @include tablet-view{
-        display:flex;
-        align-items: center;
-        z-index: 1;
-    }
+.project:hover {
+  // .project-details-access {
+  filter: grayscale(0);
+  box-shadow: 0 -4px 2px -2px rgba(0, 0, 0, 0.4);
+  color: black;
+  @include tablet-view {
+    display: flex;
+    align-items: center;
+  }
 }
